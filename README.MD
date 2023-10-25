@@ -18,11 +18,11 @@ Assumptions: Always a first name, last name, and class populated in student obje
 - Can run test(s) from `test_main.py` in IDE for further checks
 
 <b>Paths to run directly:</b>
-- [GET] /fetchStudents/?s_class={STUDENTS CLASS}
+- **[GET]** /fetchStudents/?s_class=`{STUDENTS CLASS}`
   - Enter a class name (Example: "A 3") to retrieve all students that are enrolled in that class
-- [GET] /fetchStudents/?id={STUDENT ID}
+- **[GET]** /fetchStudents/?id=`{STUDENT ID}`
   - Enter a student ID to retrieve said student's enrollment data
-- [POST] /fetchStudents/
+- **[POST]** /fetchStudents/
   - Create a student with enrollment data
   - json example for request body:
     - `{
@@ -31,7 +31,7 @@ Assumptions: Always a first name, last name, and class populated in student obje
           "student_class": "A 3",
           "nationality": "Forest"
         }`
-- [PUT] /fetchStudents/{STUDENT ID}
+- **[PUT]** /fetchStudents/`{STUDENT ID}`
   - Update a student via their ID. Optional choices = `firstName`, `student_class`
   - json example for request body:
   - NOTE: Both are `Optional` values
@@ -39,7 +39,7 @@ Assumptions: Always a first name, last name, and class populated in student obje
           "firstName": "string",
           "student_class": "string"
         }`
-- [DELETE] /fetchStudents/{STUDENT ID}
+- **[DELETE]** /fetchStudents/`{STUDENT ID}`
   - Enter a student ID to remove
 
 <b>Requirements Checklist:</b>
