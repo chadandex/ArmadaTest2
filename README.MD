@@ -51,3 +51,5 @@ Assumptions: Always a first name, last name, and class populated in student obje
 - [x] Delete an existing record on the basis of unique ID
 - [x] Fetch bulk record: all students in database for that class
 - [x] Fetch student record by student id
+- [ ] TODO: Build a CI/CD pipeline of your choice (EX: GitHub Actions/Jenkins) and build, test and
+deploy code on your machine.
